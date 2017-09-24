@@ -1,0 +1,331 @@
+body{
+    	background-color: #fff;
+    	font-family: "微软雅黑";
+    	font-size: 18px;
+    	}
+    	.mui-card-content{margin: 2%;}
+    	#pullrefresh{
+				overflow: inherit;
+				z-index: 0;
+			}
+		.comments {
+  		/*	margin-bottom: 60px;*/
+		    border-bottom: 1px solid rgba(200, 199, 204, 0.52);
+    
+			}
+		.mui-pull-bottom-pocket{
+				bottom: 60px;
+			}
+    	.mui-card-content-inner{
+    		padding: 0;
+    	}
+    	#titleText{
+		    text-align: center;
+		    position: fixed;
+		    background: #fff;
+			top: 0; 
+		    left: 0;
+		    width: 100%;
+		    z-index: 999;
+
+    	}
+    	#titleText img{
+    		margin: 0 auto;
+    		/*margin-bottom: 10px;*/
+    		margin-top: 15px;
+    		height: 50%;
+    	}
+    	#titleText p{
+    		margin: 0 auto;
+    		margin-top: 10px;
+    	}
+    	#titleText span{
+    		color: #666;
+    	}
+    	#search{
+    		box-shadow:0 1px #d8d8d8;
+    		background-color: #fff;
+    		z-index: 100;
+    		position: fixed;
+    	}
+    	#search a{
+    		color: #605968;
+    	}
+    	#box span{
+    		color: #c500ff;
+    		font-size: 0.9em;
+    	}
+    	
+    	.Sendout{
+    		position: fixed;
+    		width: 100%;
+		    bottom:0;
+		    left: 0;
+		    background-color: #fff;
+		    z-index: 9999;
+		    
+    	}
+    	.Sendout textarea{
+    		float: left;
+    		max-width: 70%;
+    		border-radius:0;
+    		margin: 10px 0 0 10px;
+    		background-color: #f8f8f8;
+    		border: none;
+    		border-bottom: 8px solid #fff;
+    		word-break:break-all
+    	} 
+    	
+    	.Sendout button{
+    		float: right;
+    		width: 20%;
+    		border-radius:0;
+		    margin: 10px 10px 2px 0;
+		    padding: 0.5em 1.2em 0.7em 1.2em;
+		    background-color: #f8f8f8;
+		    color: #c500ff;
+		    font-size: 16px;
+    		border: none;
+    		border-bottom: 8px solid #fff;
+    	} 
+    	.hotCard{
+    		background:transparent;
+    		box-shadow: none;
+    		margin: 0;
+    	}
+    	/*.hotCard p{
+    		margin-bottom: 20px;
+    	}*/
+    	/*.hotCard img{
+    		 margin-top: 4px;
+    	}*/
+    	.hotCard h5{
+    		color: #3C3C3C;
+    		font-size: 1.2em;
+    		
+    	}
+    	.hotCard .mui-media-body p{
+    		color: #666;
+    	}
+    	#box p{
+    		color: #555;
+    	/*	font-size: 0.85em;*/
+    	    font-size:0.8em;
+    	}
+    	/*.comments{
+    		margin-bottom: 14%;
+    	}*/
+    	
+    	.hotCard .mui-card-content-inner p {
+		    color: #555;
+		    text-align: justify;
+	        /*margin: 10px 13px;*/
+	        font-size: 14px;
+	    }
+	    .hotCard .post-img .post-num img{
+	    		width: 26%;
+	    		margin-right: 8%;
+    	}
+    	.hotCard .post-img .post-num span {
+			    font-size: 1em;
+			}
+    	.hotCard .post-img .play img {
+			    width: 50%;
+		}
+		.hotCard .post-img .play {
+		    position: absolute;
+		    top: 34%;
+		    left: 41%;
+		}
+		.hotCard .post-img .post-num {
+		    position: absolute;
+		    bottom: 5%;
+		    left: 4%;
+		    color: #fff;
+		}
+		.hotCard .post-img {
+		    position: ;
+		}
+		.post-img .postVideo{
+			-webkit-filter: brightness(0.70);
+			filter: brightness(0.70);
+		}
+    	#loadMore{
+    		margin-bottom: 14%;
+    	}
+    	.mui-card-footer:before{
+    		background: none;
+    	}
+    	.mui-table-view:after{
+    		background: none;
+    	}
+    	#searchText{
+		    text-align: center;
+		    /*background: #fff;*/
+		    /*top: 420px;*/ 
+		    left: 0;
+		    width: 100%;
+		    z-index: 100;
+    	}
+    	#searchText img{
+    		margin: 0 auto;
+    		/*margin-bottom: 10px;*/
+    		margin-top: 15px;
+    		height: 50%;
+    	}
+    	#searchText p{
+    		margin: 0 auto;
+    		margin-top: 10px;
+    		
+    	}
+    	
+    	#searchText span{
+    		color: #666;
+    		font-size: 1em;
+    	}
+    	#newText{
+		    text-align: center;
+		    background: #fff;
+		    position: fixed;
+			bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    z-index: 20;
+    	}
+    	#newText img{
+    		margin: 0 auto;
+    		height: 50%;
+    	}
+    	#newText p{
+    		margin: 0 auto;
+    	}
+    	.spacing{
+    		height: 11px;
+		    width: 100%;
+		    background: #f8f8f8;
+		    margin-top: 2%;
+    	}
+    	.all_comments{
+    		color: #666;
+    		font-size: 0.85em;
+    		padding: 4% 2% 3% 3%;
+    		/*border-bottom:1px solid rgba(200, 199, 204, 0.52)*/
+    	}
+    	#zhuanZai{
+			margin: 0;
+			padding: 0;
+		    position: fixed;
+	        bottom: -580px;
+	        /*width: 100%;*/
+	        /*height: 100%;*/
+	        background-color: #fff;
+	        /*padding: 10px 5px;*/
+	      /*  margin-left: 0;*/
+	        z-index: 9999999999;
+	        box-shadow: 3px 3px 3px 3px;
+	    }
+		#zhuanZai li{
+		    float: left;
+		    width: 20%;
+		    text-align: center;
+		   
+		}
+		#zhuanZai li img{
+	        width: 80%;
+	        height: 80%;
+	        cursor: pointer;
+	        margin-top: 50%;
+		}
+		#zhuanZai li .mui-subtitle{
+		   font-family: "microsoft yahei";
+		   font-size: 12px;
+		   color: #898989;
+		}
+		
+		#zhuanZai .mui-btn{
+			border: none;
+			border-top: 1PX solid #E8E8E8;
+			margin-top: 38%;
+		}
+		.cancel a{
+			color: #ff0066;
+			display: block;
+			width: 100%;
+		}
+    	/*放大缩小*/
+    	.enlarge{
+			position:relative;
+			animation:enlarge 1s 1;
+			-webkit-animation:enlarge 1s 1; /* Safari and Chrome */
+			-moz-animation: enlarge 1s 1;
+		}
+		@keyframes enlarge
+		{
+			0%   {
+		}
+			50%  {
+				transform:scale(1.5);    
+				-webkit-transform:scale(1.5);    
+				-moz-transform:scale(1.5);    
+				-o-transform:scale(1.5);    
+				-ms-transform:scale(1.5);
+			}
+			100% {
+			}
+		}
+		
+		@-webkit-keyframes enlarge /* Safari and Chrome */
+		{
+			0%   {
+			}
+			50%  {
+				transform:scale(1.5);    
+				-webkit-transform:scale(1.5);    
+				-moz-transform:scale(1.5);    
+				-o-transform:scale(1.5);    
+				-ms-transform:scale(1.5);
+			}
+			100% {
+			}
+		}
+    	.mark a{
+				position: fixed;
+				top:0;
+				left: 0;
+				background: rgba(0, 0, 0, 0.4);
+				width: 100%;
+				height: 100%;
+				z-index: 9999;
+				display: none;
+			}
+		.marka a{
+				position: fixed;
+				top:0;
+				left: 0;
+				background: rgba(0, 0, 0, 0);
+				width: 100%;
+				height: 100%;
+				z-index: 9998;
+				display: none;
+			}
+
+    	#modelView{
+    		background-color:#DDDDDD;
+    		z-index:0;
+    		opacity:0.7;
+    		height: 100%;
+    		width: 100%;
+    		position: relative;
+    	} 
+    	.playvideo{
+    		padding-top: auto;
+    		z-index: 99;
+    		position: relative;
+    	} 
+    	.zy_media{
+    		z-index: 99;
+    	}
+    	#box {
+		    border-bottom: 1px solid rgba(200, 199, 204, 0.52); 
+    	}
+		

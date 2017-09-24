@@ -1,0 +1,11 @@
+body{
+		background-color: #f9f8f9;
+	}
+	a{
+		color: #605968;
+	}
+	.mui-input-row label{
+		width: 50%;
+	    margin-top: 3%;
+    	font-size: 14px;
+	}
