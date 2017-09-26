@@ -35,10 +35,10 @@
 				
 				<ul id="photoWrap">
 					<div id="photo"></div>
-					<li><img></li>
-					<li><img></li>
-					<li><img></li>
-					<li><img></li>
+					<li id="imgBtn1"><img></li>
+					<li id="imgBtn2"><img></li>
+					<li id="imgBtn3"><img></li>
+					<li id="imgBtn4"><img></li>
 				</ul>
 				<input id="file" type="file" accept="image/*"/>
 				<input type="button" value="确认" id="Btn"/>
@@ -59,14 +59,8 @@
 		$("#photo").click(function(){
 			$("#file").trigger("click");
 		});
-		var count = 0;
 		document.querySelector('input').addEventListener('change', function () {
 		    var that = this;
-		    count ++;
-		    if(count>4){
-		    	alert("已经添加了4张了");
-		    	return;
-		    }
 		    var fs = that.files[0];
 			if(fs){
 		        var reader=new FileReader();
@@ -78,8 +72,13 @@
 		        reader.onprogress=function(){
 		            console.log('正在读取.....')
 		        }
-		        reader.onload=function(e){debugger
-		            $("#photoWrap li").eq(count-1).css("display","inline-block").find("img").attr("src",this.result);
+		        reader.onload=function(e){
+		        	for(var i=0;i<4;i++){
+		        		if(!$("#photoWrap li").eq(i).find("img").attr("src")){
+		        			$("#photoWrap li").eq(i).css("display","inline-block").find("img").attr("src",this.result);
+		        			break;
+		        		}
+		        	}
 		        }
 		        reader.onabort=function(){
 		            console.log('读取中断！！')     
@@ -93,6 +92,28 @@
 		   }
 		});
 		
+		//确认框confirm
+		confirmDelImg("imgBtn1");
+		confirmDelImg("imgBtn2");
+		confirmDelImg("imgBtn3");
+		confirmDelImg("imgBtn4");
+		
+		function confirmDelImg(idStr){
+			document.getElementById(idStr).addEventListener('tap', function(){
+			    var btnArray = ['否', '是'];
+			    mui.confirm('', '是否删除该图片', btnArray, function(e){	debugger
+			        if (e.index == 1) 
+			        {
+			        	$("#"+idStr).hide();
+			            $("#"+idStr +" img").attr("src","");
+			        } 
+			        else 
+			        {
+			        	console.log('取消删除');
+			        }
+			    })
+			});
+		}
 		
 	</script>
 
